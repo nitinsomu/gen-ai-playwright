@@ -12,18 +12,21 @@ def test_login():
         context = browser.new_context()
         page = context.new_page()
 
-        generateTest(f"Navigate to {webpage}", page)
-        time.sleep(1)
+        page.goto(webpage)
+        time.sleep(2)
+
         generateTest("Enter nitin in username field", page)
-        time.sleep(3)
+        time.sleep(2)
+
         generateTest("Enter password123 in password field", page)
-        time.sleep(3)
+        time.sleep(2)
+
         generateTest("Check the remember me checkbox", page)
-        time.sleep(3)
+        time.sleep(2)
+
         generateTest("Click on the button named Submit", page)
-        
         time.sleep(3)
-        # Close the browser
+        
         browser.close()
 
 test_login()

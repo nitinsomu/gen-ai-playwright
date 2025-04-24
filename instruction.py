@@ -14,7 +14,7 @@ def get_ollama_response(prompt):
         str: The response from the model.
     """
     client = ollama.Client()
-    model = "genai"
+    model = "genai2"
 
     try:
         response = client.generate(model=model, prompt=prompt)

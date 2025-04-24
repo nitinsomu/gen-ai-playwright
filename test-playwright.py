@@ -9,20 +9,20 @@ def test_form_submission():
         page = context.new_page()
 
         page.goto("file:///C:/Users/nitin/Desktop/Projects/GenAIPlaywright/exampleWebsite/index.html")
-        time.sleep(1)
+        time.sleep(2)
 
         page.fill('input[name="username"]', 'nitin')
-        time.sleep(1)
+        time.sleep(2)
 
         page.fill('input[name="password"]', 'password123')
-        time.sleep(1)
+        time.sleep(2)
 
         page.click('input[name="remember-me"]')
-        time.sleep(1)
+        time.sleep(2)
 
         page.click('button[name="Submit"]')
 
-        time.sleep(1)
+        time.sleep(2)
 
         browser.close()
 
